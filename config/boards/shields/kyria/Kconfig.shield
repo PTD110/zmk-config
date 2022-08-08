@@ -1,0 +1,10 @@
+config SHIELD_MINDA
+    bool
+
+config SHIELD_MINDA_LEFT
+	def_bool $(shields_list_contains,minda_left)
+	select SHIELD_MINDA
+
+config SHIELD_MINDA_RIGHT
+	def_bool $(shields_list_contains,minda_right)
+	select SHIELD_MINDA
