@@ -18,15 +18,16 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B        				                     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                &kp LSHFT &kp LSHFT                                                                       &kp LSHFT &kp LSHFT 
-	                         &kp LGUI &kp DEL &kp RET                             &kp RET  &kp SPACE  &kp TAB
-                                   &kp SPACE &kp ESC                                     &kp BSPC &kp RALT
+	&kp EQUAL &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&kp MINUS &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B        		                                   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                &kp LPAR &kp RPAR                                                                     &kp LBKT &kp RBKT 
+	                         &kp LALT &kp SPACE &kp LCTRL                         &kp RET  &kp BSPC  &kp TAB
+                                   &kp LGUI &kp RALT                                   &kp ESC &kp DEL
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
+
