@@ -14,11 +14,11 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: kyria_rev2_left
+    shield: minda_left
   - board: nice_nano_v2
-    shield: kyria_rev2_right
+    shield: minda_right
 include:
   - board: nice_nano_v2
-    shield: kyria_rev2_left
+    shield: minda_left
   - board: nice_nano_v2
-    shield: kyria_rev2_right
+    shield: minda_right
