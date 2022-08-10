@@ -36,8 +36,8 @@
  &kp PAGE_DOWN     &kp LSHFT    &kp C_PLAY     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                  &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp RSHIFT   &kp END
         &trans        &kp F1        &kp F2           &kp F3           &kp F4      &kp F5                    &kp F6    &kp F7   &kp F8     &kp F9     &kp F10    &trans
                               &kp CAPSLOCK  &kp PRINTSCREEN                                                                   &kp F11    &kp F12
-                                                                      &trans      &trans  &trans  &trans  &kp RALT  &kp RALT
-                                                                      &trans      &trans                    &trans  &kp RGUI
+                                                                 &key_repeat      &trans  &trans  &trans  &kp RALT  &kp RALT
+                                                                 &bootloader      &reset                    &trans  &kp RGUI
             >;
         };
     };
