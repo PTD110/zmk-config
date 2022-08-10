@@ -32,14 +32,14 @@
 		winleft: win_left {
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_lft";
-			bindings = <&kp LEFT>, <&ctrl_win_left>;
+			bindings = <&kp LEFT>, <&wnd_left>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
 
 		winright: win_right {
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_rht";
-			bindings = <&kp RIGHT>, <&ctrl_win_right>;
+			bindings = <&kp RIGHT>, <&wnd_right>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
 	};
