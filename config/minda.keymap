@@ -12,6 +12,7 @@
 		wnd_left: ctrl_win_left {
 			label = "cwinlft";
 			compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
 			bindings
 				= <&macro_press &kp LGUI &kp LCTRL>
 				, <&macro_tap &kp LEFT>
@@ -21,6 +22,7 @@
 		wnd_right: ctrl_win_right {
 			label = "cwinrht";
 			compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
 			bindings
 				= <&macro_press &kp LGUI &kp LCTRL>
 				, <&macro_tap &kp RIGHT>
@@ -32,6 +34,7 @@
 		winleft: win_left {
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_lft";
+            #binding-cells = <0>;
 			bindings = <&kp LEFT>, <&wnd_left>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
@@ -39,6 +42,7 @@
 		winright: win_right {
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_rht";
+            #binding-cells = <0>;
 			bindings = <&kp RIGHT>, <&wnd_right>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
