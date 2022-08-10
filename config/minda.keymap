@@ -12,22 +12,33 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+            //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+
             bindings = <
-    &kp GRAVE &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-    &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B        	                                       &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                &kp MINUS &kp EQUAL                                                                     &kp LBKT &kp RBKT 
-                             &kp LALT &kp SPACE &kp LCTRL                         &kp RCTL &kp RET &kp BSPC
-                                   &kp LGUI &kp RALT                                   &kp ESC &kp DEL
+ &kp GRAVE   &kp Q      &kp W      &kp E     &kp R        &kp T                          &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
+   &kp TAB   &kp A      &kp S      &kp D     &kp F        &kp G                          &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT   &kp Z      &kp X      &kp C     &kp V        &kp B                          &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
+                    &kp MINUS  &kp EQUAL                                                                   &kp LBKT  &kp RBKT
+                                          &kp LALT  &lt 1 SPACE  &kp LCTRL  &kp RCTRL  &kp RET  &kp BSPC
+                                          &kp LGUI     &kp RALT                        &kp ESC   &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
+
+        L1 {
+            bindings = <
+   &kp PAGE_UP  &kp NUMBER_1  &kp NUMBER_2           &kp N3           &kp N4      &kp N5                    &kp N6    &kp N7   &kp N8     &kp N9      &kp N0  &kp HOME
+ &kp PAGE_DOWN     &kp LSHFT    &kp C_PLAY     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                  &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &kp RSHIFT   &kp END
+        &trans        &kp F1        &kp F2           &kp F3           &kp F4      &kp F5                    &kp F6    &kp F7   &kp F8     &kp F9     &kp F10    &trans
+                              &kp CAPSLOCK  &kp PRINTSCREEN                                                                   &kp F11    &kp F12
+                                                                      &trans      &trans  &trans  &trans  &kp RALT  &kp RALT
+                                                                      &trans      &trans                    &trans  &kp RGUI
+            >;
+        };
     };
 };
-
