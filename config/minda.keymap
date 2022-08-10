@@ -30,7 +30,7 @@
 		};
 	};
 
-	behaviours {
+	behaviors {
 		winleft: win_left {
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_lft";
@@ -73,7 +73,7 @@
         L1 {
             bindings = <
    &kp PAGE_UP  &kp NUMBER_1  &kp NUMBER_2           &kp N3           &kp N4      &kp N5                    &kp N6    &kp N7   &kp N8     &kp N9      &kp N0  &kp HOME
- &kp PAGE_DOWN     &kp LSHFT    &kp C_PLAY     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                 &wnd_left  &kp DOWN   &kp UP &wnd_right  &kp RSHIFT   &kp END
+ &kp PAGE_DOWN     &kp LSHFT    &kp C_PLAY     &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                  &winleft  &kp DOWN   &kp UP  &winright  &kp RSHIFT   &kp END
         &trans        &kp F1        &kp F2           &kp F3           &kp F4      &kp F5                    &kp F6    &kp F7   &kp F8     &kp F9     &kp F10    &trans
                               &kp CAPSLOCK  &kp PRINTSCREEN                                                                   &kp F11    &kp F12
                                                                  &key_repeat      &trans  &trans  &trans  &kp RALT    &trans
