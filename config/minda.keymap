@@ -35,7 +35,7 @@
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_lft";
             #binding-cells = <0>;
-			bindings = <&kp LEFT>, <&wnd_left>;
+			bindings = <&kp LEFT>, <&wnd_left LEFT>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
 
@@ -43,7 +43,7 @@
 			compatible = "zmk,behaviour-mod-morph";
 			label = "wn_rht";
             #binding-cells = <0>;
-			bindings = <&kp RIGHT>, <&wnd_right>;
+			bindings = <&kp RIGHT>, <&wnd_right RIGHT>;
 			mods = <(MOD_LALT|MOD_RALT)>;
 		};
 	};
