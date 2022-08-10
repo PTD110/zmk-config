@@ -34,7 +34,7 @@
 			label = "wn_lft";
 			bindings = <&kp LEFT>, <&ctrl_win_left>;
 			mods = <(MOD_LALT|MOD_RALT)>;
-		}
+		};
 
 		winright: win_right {
 			compatible = "zmk,behaviour-mod-morph";
